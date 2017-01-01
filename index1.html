@@ -8,7 +8,7 @@
     <meta name="keyword" content="Creative, Dashboard, Admin, Template, Theme, Bootstrap, Responsive, Retina, Minimal">
     <link rel="shortcut icon" href="img/favicon.png">
 
-    <title>Form Component | Creative - Bootstrap 3 Responsive Admin Template</title>
+    <title>Creative - Bootstrap Admin Template</title>
 
     <!-- Bootstrap CSS -->    
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -17,35 +17,42 @@
     <!--external css-->
     <!-- font icon -->
     <link href="css/elegant-icons-style.css" rel="stylesheet" />
-    <link href="css/font-awesome.min.css" rel="stylesheet" />
-    <!-- date picker -->
-    
-    <!-- color picker -->
-    
+    <link href="css/font-awesome.min.css" rel="stylesheet" />    
+    <!-- full calendar css-->
+    <link href="assets/fullcalendar/fullcalendar/bootstrap-fullcalendar.css" rel="stylesheet" />
+	<link href="assets/fullcalendar/fullcalendar/fullcalendar.css" rel="stylesheet" />
+    <!-- easy pie chart-->
+    <link href="assets/jquery-easy-pie-chart/jquery.easy-pie-chart.css" rel="stylesheet" type="text/css" media="screen"/>
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="css/owl.carousel.css" type="text/css">
+	<link href="css/jquery-jvectormap-1.2.2.css" rel="stylesheet">
     <!-- Custom styles -->
+	<link rel="stylesheet" href="css/fullcalendar.css">
+	<link href="css/widgets.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/style-responsive.css" rel="stylesheet" />
-
+	<link href="css/xcharts.min.css" rel=" stylesheet">	
+	<link href="css/jquery-ui-1.10.4.min.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 -->
     <!--[if lt IE 9]>
       <script src="js/html5shiv.js"></script>
       <script src="js/respond.min.js"></script>
       <script src="js/lte-ie7.js"></script>
     <![endif]-->
-
   </head>
-  <body>
 
+  <body>
   <!-- container section start -->
   <section id="container" class="">
-      <!--header start-->
+     
+      
       <header class="header dark-bg">
             <div class="toggle-nav">
                 <div class="icon-reorder tooltips" data-original-title="Toggle Navigation" data-placement="bottom"><i class="icon_menu"></i></div>
             </div>
 
             <!--logo start-->
-            <a href="index1.html" class="logo">PUN <span class="lite">HLAING </span></a>
+            <a href="index1.html" class="logo">PUN<span class="lite">HLAING</span></a>
             <!--logo end-->
 
             <div class="nav search-row" id="top_menu">
@@ -68,12 +75,12 @@
                     <li id="task_notificatoin_bar" class="dropdown">
                         <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                             <span class="icon-task-l"></i>
-                            <span class="badge bg-important">5</span>
+                            <span class="badge bg-important">6</span>
                         </a>
                         <ul class="dropdown-menu extended tasks-bar">
                             <div class="notify-arrow notify-arrow-blue"></div>
                             <li>
-                                <p class="blue">You have 5 pending tasks</p>
+                                <p class="blue">You have 6 pending letter</p>
                             </li>
                             <li>
                                 <a href="#">
@@ -266,7 +273,7 @@
                             <span class="profile-ava">
                                 <img alt="" src="img/avatar1_small.jpg">
                             </span>
-                            <span class="username">Khin Wint Wah</span>
+                            <span class="username">Admin</span>
                             <b class="caret"></b>
                         </a>
                         <ul class="dropdown-menu extended logout">
@@ -302,7 +309,7 @@
       <!--header end-->
 
       <!--sidebar start-->
-     <aside>
+       <aside>
           <div id="sidebar"  class="nav-collapse ">
               <!-- sidebar menu start-->
               <ul class="sidebar-menu">                
@@ -392,173 +399,199 @@
           </div>
       </aside>
       <!--sidebar end-->
-
+      
       <!--main content start-->
       <section id="main-content">
-          <section class="wrapper">
-		  <div class="row">
+          <section class="wrapper">            
+              <!--overview start-->
+			  <div class="row">
 				<div class="col-lg-12">
-					<h3 class="page-header"><i class="fa fa-file-text-o"></i> Creating Page</h3>
+					<h3 class="page-header"><i class="fa fa-laptop"></i> Dashboard</h3>
 					<ol class="breadcrumb">
 						<li><i class="fa fa-home"></i><a href="index.html">Home</a></li>
-						<li><i class="icon_document_alt"></i>Forms</li>
-						<li><i class="fa fa-file-text-o"></i>Create</li>
+						<li><i class="fa fa-laptop"></i>Dashboard</li>						  	
 					</ol>
 				</div>
 			</div>
-              <div class="row">
-                  <div class="col-lg-12">
-                      <section class="panel">
-                         
-              <!-- Basic Forms & Horizontal Forms-->
               
-             
-                  <div class="col-lg-8">
-                      <section class="panel">
-                          <header class="panel-heading">
-                          Forms
-                          </header>
-                          <div class="panel-body">
-                              <form class="form-horizontal" role="form">
-                                  <div class="form-group">
-                                      <label for="inputEmail1" class="col-lg-2 control-label">Name</label>
-                                      <div class="col-lg-10">
-                                          <input type="email" class="form-control" id="inputEmail1" placeholder="Full Name">
-                                          <p class="help-block">Example Kyaw Kyaw.</p>
-                                      </div>
-                                  </div>
-                                  <div class="form-group">
-                                      <label for="inputPassword1" class="col-lg-2 control-label">Phone Number</label>
-                                      <div class="col-lg-10">
-                                          <input type="text" class="form-control" id="inputPassword1" placeholder="Phone No.">
-                                      </div>
-                                  </div>
-                                   <div class="form-group">
-                                                  <label class="control-label col-sm-2">Address</label>
-                                                  <div class="col-sm-10">
-                                                      <textarea name="editor1"  rows="6" cols="80"></textarea>
-                                                  </div>
-                                              </div>  
+            <div class="row">
+				<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+					<div class="info-box blue-bg">
+						<i class="fa fa-cubes"></i>
+						<div class="count">6</div>
+						<div class="title">Messages</div>						
+					</div><!--/.info-box-->			
+				</div><!--/.col-->
+				
+				<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+					<div class="info-box brown-bg">
+						<i class="fa fa-thumbs-o-up"></i>
+						<div class="count">70</div>
+						<div class="title">Requests</div>						
+					</div><!--/.info-box-->			
+				</div><!--/.col-->	
+				
+			<!-- 	<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+					<div class="info-box dark-bg">
+						<i class="fa fa-thumbs-o-up"></i>
+						<div class="count">4.362</div>
+						<div class="title"></div>						
+					</div>		
+				</div>
+				
+				<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+					<div class="info-box green-bg">
+						<i class="fa fa-cubes"></i>
+						<div class="count">1.426</div>
+						<div class="title">Stock</div>						
+					</div>		
+				</div> -->
+				
+			</div><!--/.row-->
+		
+			
+           
+		  <!-- Today status end -->
+			
+            
+                    
+                   
+                <!-- statics end -->
+              
+            
+				
 
-                                    <div class="form-group">
-                                                  <label class="control-label col-sm-2">Billing Address</label>
-                                                  <div class="col-sm-10">
-                                                      <textarea name="editor1"  rows="6" cols="80"></textarea>
-                                                  </div>
-                                              </div> 
-
-                            <div class="form-group">
-                              <label class="control-label col-sm-2">Em Fees Payment </label>
-                                      <div class="col-sm-10">
-                                          <label class="checkbox-inline">
-                                              <input type="checkbox" id="inlineCheckbox1" value="option1"> Monthly
-                                          </label>
-                                          <label class="checkbox-inline">
-                                              <input type="checkbox" id="inlineCheckbox2" value="option2"> Quaterly
-                                          </label>
-                                          <label class="checkbox-inline">
-                                              <input type="checkbox" id="inlineCheckbox3" value="option3"> Yearly
-                                          </label>
-                                        </div>
-                                        </div>
-
-
-                            <div class="form-group">
-                              <label class="control-label col-sm-2">Goverment Tax </label>
-                                      <div class="col-sm-10">
-                                          <label class="checkbox-inline">
-                                              <input type="checkbox" id="inlineCheckbox1" value="option1"> Land tax
-                                          </label>
-                                          <label class="checkbox-inline">
-                                              <input type="checkbox" id="inlineCheckbox2" value="option2"> Property Tax
-                                          </label>
-                                          <label class="checkbox-inline">
-                                              <input type="checkbox" id="inlineCheckbox3" value="option3"> Rental Tax
-                                          </label>
-                                        </div>
-                                        </div>
-                                
-                                 <div class="form-group">
-                              <label class="control-label col-sm-2">Private Security </label>
-                                      <div class="col-sm-10">
-                                        
-                                        <div class="row m-bot15">
-                                          
-                                              <input type="checkbox" checked="" data-toggle="switch" />
-                                          </div>
-
-
-                                                                                </div>
-                                        </div>
-                                
-                                 <div class="form-group">
-                              <label class="control-label col-sm-2">Swimming Services </label>
-                                      <div class="col-sm-10">
-                                          <div class="row m-bot15">
-                                          
-                                              <input type="checkbox" checked="" data-toggle="switch" />
-                                          </div>
-                                        
-                                 
-                                        </div>
-                                        </div>
-                                
-                                 
-                                  <div class="form-group">
-                                      <div class="col-lg-offset-2 col-lg-10">
-                                          <button type="submit" class="btn btn-danger">Submit</button>
-                                      </div>
-                                  </div>
-                              </form>
-                          </div>
-                      </section>
-                      
                   </div>
-              </div>
-              <!-- Inline form-->
-             
-
-                             
-                          </div>
-                      </div>
+              </div><br><br>
+		
+		<div class="row">
+			<div class="col-md-6 portlets">
+            <div class="panel panel-default">
+				<div class="panel-heading">
+                  <h2><strong>Calendar</strong></h2>
+				<div class="panel-actions">
+                    <a href="#" class="wminimize"><i class="fa fa-chevron-up"></i></a> 
+                    <a href="#" class="wclose"><i class="fa fa-times"></i></a>
+                </div>  
+                 
+                </div><br><br><br>
+                <div class="panel-body">
+                  <!-- Widget content -->
+                  
+                    <!-- Below line produces calendar. I am using FullCalendar plugin. -->
+                    <div id="calendar"></div>
+                  
+                </div>
+              </div> 
+               
+        
                   </div>
+                  <div class="widget-foot">
+                    <!-- Footer goes here -->
+                  </div>
+                </div>
               </div>
-              <!-- page end-->
+              
+            </div>
+                        
+          </div> 
+              <!-- project team & activity end -->
+
           </section>
       </section>
       <!--main content end-->
   </section>
-  <!-- container section end -->
+  <!-- container section start -->
+
     <!-- javascripts -->
     <script src="js/jquery.js"></script>
+	<script src="js/jquery-ui-1.10.4.min.js"></script>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui-1.9.2.custom.min.js"></script>
+    <!-- bootstrap -->
     <script src="js/bootstrap.min.js"></script>
     <!-- nice scroll -->
     <script src="js/jquery.scrollTo.min.js"></script>
     <script src="js/jquery.nicescroll.js" type="text/javascript"></script>
-
-    <!-- jquery ui -->
-    <script src="js/jquery-ui-1.9.2.custom.min.js"></script>
-
-    <!--custom checkbox & radio-->
-    <script type="text/javascript" src="js/ga.js"></script>
-    <!--custom switch-->
-    <script src="js/bootstrap-switch.js"></script>
-    <!--custom tagsinput-->
-    <script src="js/jquery.tagsinput.js"></script>
-    
-    <!-- colorpicker -->
+    <!-- charts scripts -->
+    <script src="assets/jquery-knob/js/jquery.knob.js"></script>
+    <script src="js/jquery.sparkline.js" type="text/javascript"></script>
+    <script src="assets/jquery-easy-pie-chart/jquery.easy-pie-chart.js"></script>
+    <script src="js/owl.carousel.js" ></script>
+    <!-- jQuery full calendar -->
+    <<script src="js/fullcalendar.min.js"></script> <!-- Full Google Calendar - Calendar -->
+	<script src="assets/fullcalendar/fullcalendar/fullcalendar.js"></script>
+    <!--script for this page only-->
+    <script src="js/calendar-custom.js"></script>
+	<script src="js/jquery.rateit.min.js"></script>
+    <!-- custom select -->
+    <script src="js/jquery.customSelect.min.js" ></script>
+	<script src="assets/chart-master/Chart.js"></script>
    
-    <!-- bootstrap-wysiwyg -->
-    <script src="js/jquery.hotkeys.js"></script>
-    <script src="js/bootstrap-wysiwyg.js"></script>
-    <script src="js/bootstrap-wysiwyg-custom.js"></script>
-    <!-- ck editor -->
-    <script type="text/javascript" src="assets/ckeditor/ckeditor.js"></script>
-    <!-- custom form component script for this page-->
-    <script src="js/form-component.js"></script>
-    <!-- custome script for all page -->
+    <!--custome script for all page-->
     <script src="js/scripts.js"></script>
-  
+    <!-- custom script for this page-->
+    <script src="js/sparkline-chart.js"></script>
+    <script src="js/easy-pie-chart.js"></script>
+	<script src="js/jquery-jvectormap-1.2.2.min.js"></script>
+	<script src="js/jquery-jvectormap-world-mill-en.js"></script>
+	<script src="js/xcharts.min.js"></script>
+	<script src="js/jquery.autosize.min.js"></script>
+	<script src="js/jquery.placeholder.min.js"></script>
+	<script src="js/gdp-data.js"></script>	
+	<script src="js/morris.min.js"></script>
+	<script src="js/sparklines.js"></script>	
+	<script src="js/charts.js"></script>
+	<script src="js/jquery.slimscroll.min.js"></script>
+  <script>
+
+      //knob
+      $(function() {
+        $(".knob").knob({
+          'draw' : function () { 
+            $(this.i).val(this.cv + '%')
+          }
+        })
+      });
+
+      //carousel
+      $(document).ready(function() {
+          $("#owl-slider").owlCarousel({
+              navigation : true,
+              slideSpeed : 300,
+              paginationSpeed : 400,
+              singleItem : true
+
+          });
+      });
+
+      //custom select box
+
+      $(function(){
+          $('select.styled').customSelect();
+      });
+	  
+	  /* ---------- Map ---------- */
+	$(function(){
+	  $('#map').vectorMap({
+	    map: 'world_mill_en',
+	    series: {
+	      regions: [{
+	        values: gdpData,
+	        scale: ['#000', '#000'],
+	        normalizeFunction: 'polynomial'
+	      }]
+	    },
+		backgroundColor: '#eef3f7',
+	    onLabelShow: function(e, el, code){
+	      el.html(el.html()+' (GDP - '+gdpData[code]+')');
+	    }
+	  });
+	});
+
+
+
+  </script>
 
   </body>
 </html>
